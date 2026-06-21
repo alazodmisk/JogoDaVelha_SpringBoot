@@ -1,5 +1,6 @@
 package com.guiviana.jogoDaVelha.model;
 
-public class Simbolo {
-
+public enum Simbolo {
+    X,
+    O
 }

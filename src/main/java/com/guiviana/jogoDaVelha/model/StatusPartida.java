@@ -1,5 +1,8 @@
 package com.guiviana.jogoDaVelha.model;
 
-public class StatusPartida {
-
+public enum StatusPartida {
+    EM_ANDAMENTO,
+    EMPATE,
+    VITORIA_X,
+    VITORIA_O
 }
