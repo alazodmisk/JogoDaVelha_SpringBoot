@@ -1,5 +1,8 @@
 package com.guiviana.jogoDaVelha.model;
 
+import jakarta.persistence.Entity;
+
+@Entity
 public class Partida {
     private long id;
     private Jogador jogador1;

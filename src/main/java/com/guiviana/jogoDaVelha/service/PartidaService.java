@@ -2,10 +2,13 @@ package com.guiviana.jogoDaVelha.service;
 
 import java.util.Scanner;
 
+import org.springframework.stereotype.Service;
+
 import com.guiviana.jogoDaVelha.model.Jogador;
 import com.guiviana.jogoDaVelha.model.Partida;
 import com.guiviana.jogoDaVelha.model.Simbolo;
 
+@Service
 public class PartidaService {
     Scanner scanner = new Scanner(System.in);
     
@@ -27,7 +30,7 @@ public class PartidaService {
         System.out.println("Digite a coluna (0-2):");
         int coluna = scanner.nextInt();
         
-        if (partida.getTabuleiro()[linha][coluna] == '\0') {
+        if (partida.getTabuleiro()[linha][coluna] == '-') {
             
             if(partida.getSimboloAtual() == Simbolo.X) {
                 partida.getTabuleiro()[linha][coluna] = 'X';
